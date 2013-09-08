@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mdd2013"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.mdd2013.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.mdd2013.Create_product"
+            android:label="@string/title_activity_create_product"
+            android:parentActivityName="com.example.mdd2013.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.MDD2013.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.mdd2013.Search_Result"
+            android:label="@string/title_activity_search__result"
+            android:parentActivityName="com.example.mdd2013.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mdd2013.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.mdd2013.SearchList"
+            android:label="@string/title_activity_search_list"
+            android:parentActivityName="com.example.mdd2013MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mdd2013MainActivity" />
+        </activity>
+    </application>
+
+</manifest>
